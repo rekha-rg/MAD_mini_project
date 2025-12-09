@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg_clouds"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weather Update"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:textColor="#444444" />
+
+    <EditText
+        android:id="@+id/etCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="24dp"
+        android:hint="Enter City Name"
+        android:backgroundTint="#018786"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/etCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etCity"
+        android:layout_marginTop="12dp"
+        android:hint="Enter Country Code(optional)"
+        android:backgroundTint="#444444"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btnGet"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/etCountry"
+        android:layout_marginTop="16dp"
+        android:text="GET"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:backgroundTint="#0D72B8"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnGet"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textColor="#0D72B8" />
+
+</RelativeLayout>
